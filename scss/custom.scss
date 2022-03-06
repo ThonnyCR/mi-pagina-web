@@ -33,18 +33,21 @@ header{
     background-size: cover;
     background-position: center;
 }
+// En pantallas superiores a md se vera a ese tamaño
+@include media-breakpoint-up(md){
+    header{
+        height: 500px;
+    }
+}
 
+#row-tech{
+    margin: 5rem;
+}
 .b-right{
     border-right: 3px solid;
     border-color: white;
     @include media-breakpoint-down(lg){
         border-right: 0px;
-    }
-}
-// En pantallas superiores a md se vera a ese tamaño
-@include media-breakpoint-up(md){
-    header{
-        height: 500px;
     }
 }
 

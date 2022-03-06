@@ -12684,6 +12684,16 @@ header {
   background-position: center;
 }
 
+@media (min-width: 768px) {
+  header {
+    height: 500px;
+  }
+}
+
+#row-tech {
+  margin: 5rem;
+}
+
 .b-right {
   border-right: 3px solid;
   border-color: white;
@@ -12692,12 +12702,6 @@ header {
 @media (max-width: 991.98px) {
   .b-right {
     border-right: 0px;
-  }
-}
-
-@media (min-width: 768px) {
-  header {
-    height: 500px;
   }
 }
 /*# sourceMappingURL=custom.css.map */
