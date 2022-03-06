@@ -1,6 +1,10 @@
 // <--------------------------------------------------------- Variables --------------------------------------------------------->
+// fonts
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,300&display=swap');
 $font-family-base: 'Montserrat', sans-serif;
+
+// Bootstrap icons
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
 
 // Colores
 $primary: #6845a8;
@@ -30,10 +34,18 @@ header{
     background-position: center;
 }
 
+.b-right{
+    border-right: 3px solid;
+    border-color: white;
+    @include media-breakpoint-down(lg){
+        border-right: 0px;
+    }
+}
 // En pantallas superiores a md se vera a ese tamaño
 @include media-breakpoint-up(md){
     header{
         height: 500px;
     }
 }
+
 // <--------------------------------------------------------- Modificaciones --------------------------------------------------------->
