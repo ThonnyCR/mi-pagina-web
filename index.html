@@ -5,11 +5,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/css/custom.css">
+    <title>Portafolio</title>
 </head>
 
 <body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <i class="bi bi-bootstrap-fill"></i>
+                    <span>Anthonny E.</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-end w-100">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Sobre mí</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Conocimiento</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
+    <!-- Sobre mi -->
+    <div class="container-fluid alig d-flex justify-content-center bg-light border-top border-5 border-primary ">
+        <!-- Creo que se puede trabajar sin el justify-content aqui -->
+        <div class="row  align-items-center py-7 px-5 ">
+            <div class="col-12 col-md-6 py-4 mb-3">
+                <h2 class="fw-bold">Sobre mí</h2>
+                <hr>
+                <p class=" fst-italic">Mi nombre es <span class="fw-bold">Anthonny Eras Rivera</span>, pero me puedes
+                    llamar
+                    Thonny, soy originario de Guanacaste, Costa Rica.
+                    <br>
+                    <span> Tengo 21 años y
+                        actualmente estoy estudiando ingeniería en sistemas.</span>
+                </p>
+
+            </div>
+            <div class="col-12 col-md-6 d-flex justify-content-center">
+                <img class="rounded shadow border border-1" src="/resources/img/SobreMi.jpg" alt="Imagen sobre mi">
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid bg-dark text-white text-center py-4">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <p>© Todos los derechos reservados</p>
+            </div>
+            <div class="col-12 col-md-6">
+                <p>Anthonny Eras Rivera</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/bootstrap.min.js"></script>
 </body>
 
 </html>

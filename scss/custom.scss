@@ -1,4 +1,39 @@
+// <--------------------------------------------------------- Variables --------------------------------------------------------->
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,300&display=swap');
+$font-family-base: 'Montserrat', sans-serif;
 
+// Colores
+$primary: #6845a8;
+$secondary: blue;
+$success: #0CB7F2;
+$info: rgb(197, 66, 51);
 
-
+// paddings
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 4,
+  7: $spacer * 5,
+);
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+header{
+    background-image: url("../resources/img/header.jpg");
+    height: 300px;
+    // Para que la imagen se centre y no se estira ni se deforma
+    background-size: cover;
+    background-position: center;
+}
+
+// En pantallas superiores a md se vera a ese tamaño
+@include media-breakpoint-up(md){
+    header{
+        height: 500px;
+    }
+}
+// <--------------------------------------------------------- Modificaciones --------------------------------------------------------->
