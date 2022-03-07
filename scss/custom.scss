@@ -7,10 +7,12 @@ $font-family-base: 'Montserrat', sans-serif;
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
 
 // Colores
-$primary: #6845a8;
-$secondary: blue;
-$success: #0CB7F2;
-$info: rgb(197, 66, 51);
+$primary: rgb(14, 30, 37);
+$secondary: rgb(0, 107, 192);
+$success: rgb(200, 94, 150);
+$info: rgb(221, 75, 37);
+$dark:rgb(0, 0, 0);
+$danger:rgb(87, 61, 126);
 
 // paddings
 $spacer: 1rem;
@@ -46,8 +48,29 @@ header{
 .b-right{
     border-right: 3px solid;
     border-color: white;
-    @include media-breakpoint-down(lg){
+}
+
+@include media-breakpoint-down(xl){
+    .b-right{
         border-right: 0px;
+    }
+
+    .margin-p-tech{
+        margin-right: 6rem;
+        margin-left: 6rem;
+    }
+}
+
+@include media-breakpoint-down(md){
+    .margin-p-tech{
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+}
+@include media-breakpoint-down(xs){
+    .margin-p-tech{
+        margin-right: 0rem;
+        margin-left: 0rem;
     }
 }
 
